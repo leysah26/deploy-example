@@ -11,6 +11,6 @@ console.log(publicDirectory)
 app.use(express.static(publicDirectory))
 
 const port = 10020
-app.listen(port, ()=> {
+app.listen(process.env.PORT, ()=> {
     console.log(`Server is up on port ${port}`)
 })
